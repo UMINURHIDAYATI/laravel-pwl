@@ -8,7 +8,7 @@
 
 
 	<div class="card body"></div>
-	<form action="/manageuser/create" method="post">
+	<form action="/manage/create" method="post">
 		@csrf
 		<div class="form-group">
 			<label for="title">Judul</label>
