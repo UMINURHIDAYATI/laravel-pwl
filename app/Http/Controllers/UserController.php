@@ -9,9 +9,9 @@ use Illuminate\Support\Facades\Gate;
 
 class UserController extends Controller
 {
-    public function manageuser($id){
-      $user = User::find($id);
-        return view('manageuser', ['user'=>$id]);
+    public function manageuser(){
+      $user = User::All();
+        return view('manageuser', ['user'=>$user]);
     }
     public function add(){
         return view('adduser');

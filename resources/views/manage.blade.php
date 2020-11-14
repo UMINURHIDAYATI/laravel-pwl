@@ -7,8 +7,6 @@
 <div class="col-md-8">
 	<h1 class="my-4">DAFTAR ARTIKEL</h1>
 
-	
-
 	<div class="card body"></div>
 		<table class="table table-bordered table-striped">
 			<thead>
@@ -35,5 +33,6 @@
 		</tbody>
 	</table>
 	<a href="manage/add" class="btn btn-primary" style="margin-bottom: 40px">Tambah Data</a>
+	<a href="/manage/cetak_pdf" class="btn btn-primary" target="_blank">CETAK PDF</a>
 </div>
 </div>

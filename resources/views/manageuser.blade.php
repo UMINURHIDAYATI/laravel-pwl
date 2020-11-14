@@ -33,5 +33,6 @@
 			</tbody>
 			@endforeach
 		</table>
+		<a href="manageuser/add" class="btn btn-primary" style="margin-bottom: 40px">Tambah Data</a>
 	</div>
 </div>

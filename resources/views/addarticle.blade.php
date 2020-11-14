@@ -22,8 +22,9 @@
 		</div>
 		<div class="form-group">
 			<label for="imageurl">Feature Image</label>
-			<input type="text" class="form-control"
+			<input type="file" class="form-control"
 			required="required" name="imageurl"></br>
+			<form action="/article/create" method="post" enctype="multipart/form-data">
 		</div>
 		<button type="submit"  name="add" class="btn btn-primary control" style="margin-bottom: 40px">Tambah Data</button>
 	</form>

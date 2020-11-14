@@ -30,35 +30,38 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item {{ Route::is('home') ? 'active' : '' }}">
-            @can('user-display')
-            <a class="nav-link" href="{{ url('./home') }}">Home</a>
-            @endcan
-          </li>
 
-          <li class="nav-item {{ Route::is('about') ? 'active' : '' }}">
-            @can('user-display')
-            <a class="nav-link" href="{{ url('./about') }}">About</a>
-            @endcan
-          </li>
+<li class="nav-item {{ Route::is('home') ? 'active' : '' }}">
+@can('user-display')
+<a class="nav-link" href="{{ route('home') }}">Home</a>
+@endcan
+</li>
 
-          <li class="nav-item {{ Route::is('manage') ? 'active' : '' }}">
-            @can('manage-articles')
-            <a class="nav-link" href="{{ url('./manage') }}">Kelola</a>
-            @endcan
-          </li>
+<li class="nav-item {{ Route::is('about') ? 'active' : '' }}">
+@can('user-display')
+<a class="nav-link" href="{{ route('about') }}">About</a>
+@endcan
+</li>
 
-          <li class="nav-item {{ Route::is('contact') ? 'active' : '' }}">
-            @can('user-display')
-            <a class="nav-link" href="{{ url('./contact) }}">Contact</a>
-            @endcan
-          </li>
 
-          <li class="nav-item {{ Route::is('info') ? 'active' : '' }}">
-            @can('user-display')
-            <a class="nav-link" href="{{ url('./info') }}">Info</a>
-            @endcan
-          </li>
+<li class="nav-item {{ Route::is('manage') ? 'active' : '' }}">
+@can('manage-articles')
+<a class="nav-link" href="{{ route('manage') }}">Kelola</a>
+@endcan
+</li>
+
+<li class="nav-item {{ Route::is('manageuser') ? 'active' : '' }}">
+@can('manage-articles')
+<a class="nav-link" href="{{ route('manageuser') }}">Manage User</a>
+@endcan
+</li>
+
+<li class="nav-item {{ Route::is('contact') ? 'active' : '' }}">
+@can('user-display')
+<a class="nav-link" href="{{ route('contact') }}">Contact</a>
+@endcan
+</li>
+
 
           <li class="nav-item dropdown">
             @guest
