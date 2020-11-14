@@ -61,8 +61,8 @@ public function update($id, Request $request)
     {
         \Storage::delete('public/'.$article->imageurl);
     }
-    $image_name = $request->file('image')->store('images', 'public');
-    $article->imageurl = $image_name;
+    $image = $request->file('image')->store('images', 'public');
+    $article->imageurl = $image;
     $article->save();
     return redirect('/manage');
 }
