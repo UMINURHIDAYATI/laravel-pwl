@@ -34,5 +34,6 @@
 			@endforeach
 		</table>
 		<a href="manageuser/add" class="btn btn-primary" style="margin-bottom: 40px">Tambah Data</a>
+		<a href="/manageuser/cetak_pdf" class="btn btn-primary" target="_blank">CETAK PDF</a>
 	</div>
 </div>

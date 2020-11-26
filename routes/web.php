@@ -44,3 +44,4 @@ Route::post('/manageuser/create','UserController@create');
 Route::get('/manageuser/edit/{id}','UserController@edit');
 Route::post('/manageuser/update/{id}','UserController@update');
 Route::get('/manageuser/delete/{id}','UserController@delete');
+Route::get('/manageuser/cetak_pdf', 'UserController@cetak_pdf');
